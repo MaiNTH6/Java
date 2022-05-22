@@ -12,22 +12,21 @@ public class Lab2_3 {
         float inputWeight = scanner.nextFloat();
 
         Float BMI = inputWeight / (inputHeight * 2);
+        Float WeightMin = 18.5f * (inputHeight *2);
+        Float WeightMax = 24.9f * (inputHeight *2);
 
-        System.out.printf("Your height is: %fm\n" , inputHeight );
-        System.out.printf("Your weight is: %fkg\n" , inputWeight);
-        System.out.printf("Your BMI is: %f   " , BMI);
 
-        if(BMI <= 18.5){
-            System.out.println("Underweight");
-            System.out.println("You should increase weight");
-        }else if(BMI <= 24.9){
-            System.out.println("Normal weight");
-        }else if(BMI >= 25 && BMI <=29.9){
-            System.out.println("Overweight");
-            System.out.println("You should decrease weight");
+//        System.out.printf("Your height is: %fm\n" , inputHeight );
+//        System.out.printf("Your weight is: %fkg\n" , inputWeight);
+        System.out.printf("Your BMI is: %f\n", BMI);
+        System.out.printf("WeightMin: %fkg\n", WeightMin);
+        System.out.printf("WeightMax: %fkg\n", WeightMax);
+
+        if(inputWeight < WeightMin){
+            System.out.printf("Ban can Tang: %fkg", WeightMin - inputWeight);
         }else {
-            System.out.println("Obesity");
-            System.out.println("You should decrease weight");
+            System.out.printf("Ban can Giam: %fkg",inputWeight - WeightMax);
         }
+
     }
 }
