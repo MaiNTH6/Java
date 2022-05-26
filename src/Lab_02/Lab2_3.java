@@ -12,20 +12,21 @@ public class Lab2_3 {
         float inputWeight = scanner.nextFloat();
 
         Float BMI = inputWeight / (inputHeight * 2);
-        Float WeightMin = 18.5f * (inputHeight *2);
-        Float WeightMax = 24.9f * (inputHeight *2);
+        Float weightMin = 18.5f * (inputHeight *2);
+        Float weightMax = 24.9f * (inputHeight *2);
+
 
 
 //        System.out.printf("Your height is: %fm\n" , inputHeight );
 //        System.out.printf("Your weight is: %fkg\n" , inputWeight);
         System.out.printf("Your BMI is: %f\n", BMI);
-        System.out.printf("WeightMin: %fkg\n", WeightMin);
-        System.out.printf("WeightMax: %fkg\n", WeightMax);
+        System.out.printf("weightMin: %fkg\n", weightMin);
+        System.out.printf("weightMax: %fkg\n", weightMax);
 
-        if(inputWeight < WeightMin){
-            System.out.printf("Ban can Tang: %fkg", WeightMin - inputWeight);
+        if(inputWeight < weightMin){
+            System.out.printf("Ban can Tang: %fkg", weightMin - inputWeight);
         }else {
-            System.out.printf("Ban can Giam: %fkg",inputWeight - WeightMax);
+            System.out.printf("Ban can Giam: %fkg",inputWeight - weightMax);
         }
 
     }
