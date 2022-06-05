@@ -48,7 +48,7 @@ public class Lab04_1 {
                     int index;
                     for (index = 0; index < myArrayList.size(); index++) {
                         myArrayList.get(index);
-                    System.out.println(myArrayList.get(index));
+                        System.out.println(myArrayList.get(index));
                     }
 
                     break;
