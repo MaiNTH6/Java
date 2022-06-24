@@ -9,7 +9,7 @@ public class TestSpeed {
         SpeedController speedController = new SpeedController();
         Dog dog = new Dog("Dog", 75);
         Horse horse = new Horse("Horse", 75);
-       Tiger tiger = new Tiger("Tiger", 75);
+        Tiger tiger = new Tiger("Tiger", 75);
 
         ArrayList<Animals> animalsArrayList = new ArrayList<>();
         animalsArrayList.add(dog);

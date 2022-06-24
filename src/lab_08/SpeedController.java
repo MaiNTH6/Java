@@ -6,21 +6,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SpeedController {
-    // Loc ra nhung con biet bay
+    // Loc ra nhung con khong biet bay
     public Animal getFlyable(List<Animal> animalList) {
-        Animal maxSpeed = animalList.get(0);
-        for (int i = 0; i < animalList.size(); i++) {
-            if (animalList.get(i).isFlyable()) {
-//                maxSpeed = animalList.get(0);
-                if (maxSpeed.getSpeed() < animalList.get(i).getSpeed()) {
-                    maxSpeed = animalList.get(i);
+        Animal animalWinner = animalList.get(0);
+        for (int i = 1; i < animalList.size(); i++) {
+            if ((animalList.get(i).isFlyable()) == false) {
+                if (animalWinner.getSpeed() < animalList.get(i).getSpeed()) {
+                    animalWinner = animalList.get(i);
                 }
-//                return maxSpeed;
+
             }
 
-
         }
-        return maxSpeed;
+       return animalWinner;
     }
 }
 

@@ -37,51 +37,53 @@ public class Lab04_1 {
 
 
             switch (option) {
-                case 1:
-                    System.out.println("1. Add number into ArrayList");
-                    myArrayList.add(1, 5);
-                    System.out.println("Phan tu them moi: " + myArrayList.get(1));
-                    break;
-                case 2:
-                    System.out.println("2. Print number");
 
-                    int index;
-                    for (index = 0; index < myArrayList.size(); index++) {
-                        myArrayList.get(index);
-                        System.out.println(myArrayList.get(index));
-                    }
+                    case 1:
+                        System.out.println("1. Add number into ArrayList");
+                        myArrayList.add(1, 5);
+                        System.out.println("Phan tu them moi: " + myArrayList.get(1));
+                        break;
+                    case 2:
+                        System.out.println("2. Print number");
 
-                    break;
-                case 3:
-                    System.out.println("3. Get maximun number");
-                    int maxArray;
-                    maxArray = myArrayList.get(0);
-                    for (int i = 0; i < myArrayList.size(); i++) {
-                        if (myArrayList.get(i) > maxArray) {
-                            maxArray = myArrayList.get(i);
+                        int index;
+                        for (index = 0; index < myArrayList.size(); index++) {
+                            myArrayList.get(index);
+                            System.out.println(myArrayList.get(index));
                         }
 
+                        break;
+                    case 3:
+                        System.out.println("3. Get maximun number");
+                        int maxArray;
+                        maxArray = myArrayList.get(0);
+                        for (int i = 0; i < myArrayList.size(); i++) {
+                            if (myArrayList.get(i) > maxArray) {
+                                maxArray = myArrayList.get(i);
+                            }
 
-                    }
-                    System.out.println("MaxArray: " + maxArray);
-                    break;
-                case 4:
-                    System.out.println("4. Get minimun number");
-                    int minArray;
-                    minArray = myArrayList.get(0);
-                    for (int i = 0; i < myArrayList.size(); i++) {
-                        if (myArrayList.get(i) < minArray) {
-                            minArray = myArrayList.get(i);
+
                         }
+                        System.out.println("MaxArray: " + maxArray);
+                        break;
+                    case 4:
+                        System.out.println("4. Get minimun number");
+                        int minArray;
+                        minArray = myArrayList.get(0);
+                        for (int i = 0; i < myArrayList.size(); i++) {
+                            if (myArrayList.get(i) < minArray) {
+                                minArray = myArrayList.get(i);
+                            }
 
-                    }
-                    System.out.println("MinArray: " + minArray);
-                    break;
+                        }
+                        System.out.println("MinArray: " + minArray);
+                        break;
 
-                default:  // Ngoai nhung truong hop tren
-                    System.out.println("Data khong hop le");
+                    default:  // Ngoai nhung truong hop tren
+                        System.out.println("Data khong hop le");
 
-            }
+                }
+
 
 
         }
